@@ -28,11 +28,14 @@ body {
 @media (max-width: 748px) {
   .container {
     width: 300px;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 350px) {
   .container {
     width: 290px;
+
+    padding: 1rem;
   }
 }
