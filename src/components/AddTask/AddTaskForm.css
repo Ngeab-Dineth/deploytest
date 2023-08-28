@@ -1,0 +1,31 @@
+.add-task-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 6px;
+}
+
+.input-addtask {
+  outline: none;
+  background: white;
+  border: 2px solid #858488;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  color: black;
+  border-radius: 10px;
+}
+
+.btn-addtask {
+  background: #8758ff;
+  color: white;
+  padding: 0.55rem;
+  cursor: pointer;
+  border: 1.5px solid #8758ff;
+  border-radius: 10px;
+}
+
+@media (max-width: 350px) {
+  .add-task-form {
+    grid-template-columns: 1fr;
+  }
+}
