@@ -2,7 +2,7 @@
 
 # General
 
-- `App.css` must be in the `App.jsx` and `main.jsx` because it has the reset styles, colors and more.
+- `App.css` must be in the `App.jsx` and in the`main.jsx` because it has the reset styles, colors and more.
 
 Example:
 
@@ -43,9 +43,15 @@ import App from "./App.jsx";
 |--- src/
 |   |
 |   |--- components/
-|       |--- AddTaskForm
-|       |--- ToDo
+|       |--- AddTask/
+            |--- AddTaskForm.css
+            |--- AddTaskForm.jsx
+|       |--- ToDo/
+            |--- ToDo.css
+            |--- ToDo.jsx
 |       |--- UpdateForm
+            |--- UpdateForm.css
+            |--- UpdateForm.jsx
 |   |
 |   |--- App.css
 |   |--- App.jsx
