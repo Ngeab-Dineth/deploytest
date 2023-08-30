@@ -1,14 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddTaskForm from "./components/AddTask/AddTaskForm";
 import ToDo from "./components/ToDo/ToDo";
 import UpdateForm from "./components/UpdateForm/UpdateForm";
 import "./App.css";
-
+const LOCALSTORAGE_TASKS_KEY = "todolist-tasks";
 function App() {
   // Tasks TodoList State
   const [toDo, setToDo] = useState([]);
 
   // Temp State
+  const [isLoading, setIsLoading] = useState(true);
   const [newTask, setNewTask] = useState("");
   const [updateData, setUpdateData] = useState("");
 
@@ -62,6 +63,19 @@ function App() {
     setUpdateData("");
   };
 
+  // Local Storage
+  useEffect(() => {
+    if (!isLoading) {
+      localStorage.setItem(LOCALSTORAGE_TASKS_KEY, JSON.stringify(toDo));
+    }
+  }, [toDo]);
+
+  useEffect(() => {
+    const tasksLocal = localStorage.getItem(LOCALSTORAGE_TASKS_KEY);
+    tasksLocal && setToDo(JSON.parse(tasksLocal));
+    setIsLoading(false);
+  }, []);
+
   return (
     <div className="container">
       <h2>ToDo List</h2>
@@ -82,7 +96,7 @@ function App() {
         />
       )}
 
-      {/* Display ToDos */}
+      {/* Display ToDos When no items*/}
 
       {toDo && toDo.length ? "" : "No Tasks"}
 

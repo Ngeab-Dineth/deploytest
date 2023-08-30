@@ -3,6 +3,7 @@ import React from "react";
 const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
   return (
     <>
+      {/* Map through the toDo array and render each task */}
       {toDo &&
         toDo
           .sort((a, b) => (a.id > b.id ? 1 : -1))
