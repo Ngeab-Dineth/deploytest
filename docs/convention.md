@@ -2,7 +2,7 @@
 
 # General
 
-- `App.css` must be in the `App.jsx` and in the`main.jsx` because it has the reset styles, colors and more.
+- `App.css` must be in the `App.jsx` because it has the reset styles, colors and more.
 
 Example:
 
@@ -82,6 +82,7 @@ Example: in `AddTask` folder, there are `AddTaskForm.jsx` and `AddTaskForm.css`
   - Example: `addTask`
 - Variable name: camelCase.
   - Example: `const isCheck`
+  - Example: `let isCheck`
 - CSS class name: small letter with dash (-).
   - Example: `add-task-form`
 
