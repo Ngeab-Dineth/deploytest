@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 16px;
+  gap: 6px;
 }
 
 .input-update {
@@ -36,6 +36,7 @@
 @media (max-width: 748px) {
   .update-form {
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .update-form div:nth-child(1) {
@@ -53,6 +54,7 @@
 @media (max-width: 350px) {
   .update-form {
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
 
   .update-form div:nth-child(1) {
