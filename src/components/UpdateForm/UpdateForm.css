@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 6px;
+  gap: 16px;
 }
 
 .input-update {
