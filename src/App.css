@@ -10,15 +10,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #ffffff;
+  --bg-form: #d8d8f2;
+  --bg-btn: #8758ff;
+  --text-btn: #fff;
+  --bg-list-todo: #858488;
+  --text-input: #000000;
+  --text-list: #fff;
+  --bg-input: #ffffff;
+  --border: #858488;
+}
+
 body {
-  background-color: white;
+  background-color: var(--bg);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.h2 {
+  color: red;
+}
+
 .container {
-  background: #d8d8f2;
+  background: var(--bg-form);
   margin-top: 8rem;
   padding: 3rem;
   width: 550px;

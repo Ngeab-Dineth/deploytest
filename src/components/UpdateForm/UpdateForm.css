@@ -7,29 +7,29 @@
 
 .input-update {
   outline: none;
-  background: white;
-  border: 2px solid #858488;
+  background: var(--bg-input);
+  border: 2px solid var(--border);
   padding: 0.5rem 1rem;
   width: 100%;
-  color: black;
+  color: var(--text-input);
   border-radius: 10px;
 }
 
 .btn-update {
-  background: #8758ff;
-  color: white;
+  background: var(--bg-btn);
+  color: var(--bg-input);
   padding: 0.55rem;
   cursor: pointer;
-  border: 1.5px solid #8758ff;
+  border: 1.5px solid var(--bg-btn);
   border-radius: 10px;
 }
 
 .btn-cancel {
-  background: #8758ff;
-  color: white;
+  background: var(--bg-btn);
+  color: var(--bg-input);
   padding: 0.55rem;
   cursor: pointer;
-  border: 1.5px solid #8758ff;
+  border: 1.5px solid var(--bg-btn);
   border-radius: 10px;
 }
 
