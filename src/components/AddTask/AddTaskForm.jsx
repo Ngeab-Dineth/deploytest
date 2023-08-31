@@ -16,6 +16,7 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
             className="input-addtask"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
+            placeholder="what's your task!"
           />
         </div>
         <div>
