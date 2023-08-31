@@ -20,7 +20,7 @@
   color: var(--text-btn);
   padding: 0.55rem;
   cursor: pointer;
-  border: 1.5px solid var(--btn);
+  border: 1.5px solid var(--bg-btn);
   border-radius: 10px;
 }
 

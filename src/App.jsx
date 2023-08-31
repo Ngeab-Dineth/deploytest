@@ -3,6 +3,8 @@ import AddTaskForm from "./components/AddTask/AddTaskForm";
 import ToDo from "./components/ToDo/ToDo";
 import UpdateForm from "./components/UpdateForm/UpdateForm";
 import "./App.css";
+
+// key for stroing in local storage
 const LOCALSTORAGE_TASKS_KEY = "todolist-tasks";
 function App() {
   // Tasks TodoList State
@@ -97,7 +99,6 @@ function App() {
       )}
 
       {/* Display ToDos When no items*/}
-
       {toDo && toDo.length ? "" : "No Tasks"}
 
       <ToDo
