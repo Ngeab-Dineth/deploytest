@@ -30,11 +30,11 @@ body {
 }
 
 .container {
-  background: var(--bg-form);
+  /* background: var(--bg-form); */
   margin-top: 1rem;
   padding: 3rem;
   width: 550px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 @media (max-width: 748px) {
