@@ -31,7 +31,7 @@ body {
 
 .container {
   background: var(--bg-form);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 3rem;
   width: 550px;
   border-radius: 10px;
