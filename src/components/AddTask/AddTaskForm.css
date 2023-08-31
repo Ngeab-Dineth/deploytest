@@ -1,5 +1,5 @@
 .add-task-form {
-  width: 102%;
+  width: 101%;
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 6px;
