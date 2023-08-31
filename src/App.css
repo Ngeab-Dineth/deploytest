@@ -29,6 +29,9 @@ body {
   align-items: center;
 }
 
+.h2 {
+  font-size: 38px;
+}
 .container {
   background: var(--bg-form);
   margin-top: 1rem;

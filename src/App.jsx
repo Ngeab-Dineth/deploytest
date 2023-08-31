@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div className="container">
-      <h2>ToDo List</h2>
+      <h2 className="h2">ToDo List</h2>
       <br />
 
       {updateData && updateData ? (
